@@ -1,6 +1,11 @@
 {
   "name": "mean-stack-api",
   "version": "0.0.0",
+  "engines": {
+    "node": "10.15.1"
+  },
+  "description": "MEAN stack api demo",
+  "main": "src/main.ts",
   "scripts": {
     "start": "node server.js",
     "ng": "ng",
@@ -48,5 +53,7 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
-  }
+  },
+  "author": "demesvar-destin",
+  "license": "MIT"
 }
