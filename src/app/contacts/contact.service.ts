@@ -12,7 +12,7 @@ export class ContactService {
   getContacts(): Promise<void | Contact[]> {
     return this.http.get(this.contactsUrl)
                .toPromise()
-               .then(response => response.body() as Contact[])
+               .then(response => response as Contact[])
                .catch(this.handleError);
   }
 
@@ -20,7 +20,7 @@ export class ContactService {
   createContact(newContact: Contact): Promise<void | Contact> {
     return this.http.post(this.contactsUrl, newContact)
                .toPromise()
-               .then(response => response.body() as Contact)
+               .then(response => response as Contact)
                .catch(this.handleError);
   }
 
@@ -28,7 +28,7 @@ export class ContactService {
   deleteContact(delContactId: String): Promise<void | String> {
     return this.http.delete(this.contactsUrl + '/' + delContactId)
                .toPromise()
-               .then(response => response.body() as String)
+               .then(response => response as String)
                .catch(this.handleError);
   }
 
@@ -37,7 +37,7 @@ export class ContactService {
     var putUrl = this.contactsUrl + '/' + putContact._id;
     return this.http.put(putUrl, putContact)
                .toPromise()
-               .then(response => response.body() as Contact)
+               .then(response => response as Contact)
                .catch(this.handleError);
   }
 
