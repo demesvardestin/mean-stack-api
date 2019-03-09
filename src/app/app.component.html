@@ -1,3 +1,128 @@
-<div class="container">
-  <contact-list></contact-list>
-</div>
+<section id="landing" class="row">
+    <section id="vertical-nav">
+        <header>
+            MEAN api
+        </header>
+        
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Topics</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('introduction')" href="#introduction">
+                    Introduction
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('authentication')" href="#authentication">Authentication</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('sandbox')" href="#sandbox">Web Sandbox</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('errors')" href="#errors">Errors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('libraries')" href="#libraries">Libraries</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('versioning')" href="#versioning">Versioning</a>
+            </li>
+            <li class="nav-item nav-item-separator"></li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Endpoints</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('contact')" href="#contact">The Contact Object</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('get')" href="#get">GET</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('post')" href="#post">POST</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('put')" href="#put">PUT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" onclick="scrollToSection('delete')" href="#delete">DELETE</a>
+            </li>
+        </ul>
+        
+        <section id="footer">
+            &copy; Demesvar Destin
+        </section>
+    </section>
+    
+    <main id="main-content">
+        <article>
+            <header id="introduction">
+                Introduction
+            </header>
+            <p id="introduction-details">
+                The MEAN api is a lightweight REST api. It returns JSON-formatted
+                responses, and uses standard HTTP codes and verbs. You can make
+                requests to the API from the command line, or through our
+                <a onclick="scrollToSection('sandbox')" href="#sandbox">Web Sandbox</a>.
+                (Using the sandbox requires authentication)
+            </p>
+            <header id="authentication">
+                Authentication
+            </header>
+            <header id="web-sandbox">
+                Web Sandbox
+            </header>
+            <header id="errors">
+                Errors
+            </header>
+            <header id="libraries">
+                Libraries
+            </header>
+            <header id="versioning">
+                Versioning
+            </header>
+            <header id="contact">
+                The Contact Object
+            </header>
+            <header id="get">
+                Get
+            </header>
+            <header id="post">
+                Post
+            </header>
+            <header id="put">
+                Put
+            </header>
+            <header id="delete">
+                Delete
+            </header>
+        </article>
+        <contact-list></contact-list>
+    </main>
+    
+    <section id="codepen">
+        <header>
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">curl</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Ruby</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Python</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Node</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Java</a>
+              </li>
+            </ul>
+        </header>
+        
+        <article>
+            
+        </article>
+    </section>
+</section>

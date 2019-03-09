@@ -20,7 +20,7 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://localhost:2701
   }
 
   db = client.db();
-  console.log("Database connection ready");
+  console.log("Database connection ready!");
 
   var server = app.listen(process.env.PORT || 8080, function () {
     var port = server.address().port;
